@@ -18,7 +18,7 @@
 <?php 
 
 
-    class Factorial {
+    class Lista {
         private $lineas;
         private $columnas;
 
@@ -29,7 +29,7 @@
         }
 
 
-        public function calcFactorial() {
+        public function crearLista() {
 
             
             
@@ -43,8 +43,8 @@
     
 
     }
-    $Factorial = new Factorial(3);
-    $Factorial->calcFactorial();
+    $Lista = new Lista(3, 4);
+    $Lista->crearLista();
 
 
 ?>
