@@ -3,35 +3,37 @@
     <meta charset="UTF-8">
 
 <body>
+<!DOCTYPE html>
+<html>
+<body>
 
 <?php 
 
 
-    class Numeros {
-        private $lineas;
-        private $columnas;
+    class Arrai {
 
-        public function __construct() {
 
-            
+        private $palabras;
+        private $array_asoc_palabras;
+
+        public function __construct($palabras) {
+            $this->palabras = $palabras;
+            $this->transformarEnArrayAsoc();
         }
-        
 
-
-        public function calcNumeros() {
-
-          
-
-
+        private function transformarEnArrayAsoc() {
+            for ($i = 0; $i < count($this->palabras); $i++) {
+                $this->array_asoc_palabras[$this->palabras[$i]] = strlen($this->palabras[$i]); 
             }
+        }
 
            
 
     
 
     }
-    $Numeros = new Numeros(3);
-    $Numeros->calcNumeros();
+    $Arrai = new Arrai();
+    $Arrai->transformarEnArrayAsoc();
 
 
 ?>
