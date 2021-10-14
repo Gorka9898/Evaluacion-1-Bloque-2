@@ -53,7 +53,7 @@
 
     }
     
-$Persona = new Persona(1,1,1);
+$Persona = new Persona(1,1,1,1);
 $Persona->datos();
 
 
